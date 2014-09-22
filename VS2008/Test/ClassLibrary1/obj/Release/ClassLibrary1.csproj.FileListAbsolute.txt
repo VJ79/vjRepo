@@ -1,0 +1,10 @@
+E:\ClassLibrary1\bin\Release\ClassLibrary1.dll
+E:\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+E:\ClassLibrary1\obj\Release\ResolveAssemblyReference.cache
+E:\ClassLibrary1\obj\Release\ClassLibrary1.dll
+E:\ClassLibrary1\obj\Release\ClassLibrary1.pdb
+J:\google svn\vs2008\Test\ClassLibrary1\bin\Release\ClassLibrary1.dll
+J:\google svn\vs2008\Test\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+J:\google svn\vs2008\Test\ClassLibrary1\obj\Release\ResolveAssemblyReference.cache
+J:\google svn\vs2008\Test\ClassLibrary1\obj\Release\ClassLibrary1.dll
+J:\google svn\vs2008\Test\ClassLibrary1\obj\Release\ClassLibrary1.pdb

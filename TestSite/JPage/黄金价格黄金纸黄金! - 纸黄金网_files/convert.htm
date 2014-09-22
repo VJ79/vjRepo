@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0043)http://www.zhihuangjin.com/gold/convert.htm -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<META content="text/html; charset=gb2312" http-equiv="Content-Type">
+<TITLE>纸黄金报价转换工具</TITLE>
+<SCRIPT type="text/javascript">
+function validate(form) {
+	if (form.number.value == "" || isNaN(form.number.value)) {
+		form.number.focus();
+		alert("请输入一个数字！");
+		return false;
+	}
+}
+
+top.status = document.referrer;
+</SCRIPT>
+
+<STYLE type="text/css">
+body {
+	margin: 0;
+}
+input {
+	margin: 2px;
+}
+</STYLE>
+<LINK rel="stylesheet" href="convert_files/style.css">
+<META name="GENERATOR" content="MSHTML 9.00.8112.16440"></HEAD>
+<BODY>
+<FORM id="convertForm" onsubmit="return validate(this)" name="convertForm" 
+action="convert.php">
+<TABLE cellSpacing="1" cellPadding="5" width="100%" bgColor="#cccccc">
+  <TBODY>
+  <TR>
+    <TD bgColor="#ffffff" align="center">请输入要转换的数值<BR><INPUT style="width: 111px; height: 20px; text-align: center; font-size: 14px;" 
+      id="number" name="number" maxLength="10" size="5" type="text"><BR><INPUT name="direction" value="人民币转美元" type="submit"><INPUT name="direction" value="美元转人民币" type="submit"></TD></TR></TBODY></TABLE>
+</FORM></BODY></HTML>

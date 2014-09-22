@@ -1,0 +1,56 @@
+﻿@model MVCEverything.Models.Student
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@Html.ActionLink("aa", "edit", new { id1 = 1 }, new { id = 1 })
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Student</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Age, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Age)
+                @Html.ValidationMessageFor(model => model.Age)
+            </div>
+        </div>
+        @Html.CheckBox("chk1", true)
+        @{
+            var aa=new System.Collections.Generic.List<System.Web.Mvc.SelectListItem>();
+            aa.Add(new System.Web.Mvc.SelectListItem(){Text="fds",Value="fdsd"});
+        }
+        @Html.DropDownList("ddl1",aa , "--Select One--")
+        @Html.DropDownListFor(a => a.Name, aa, "--Select One--", new { @class = "dropdownlist" })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+     
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

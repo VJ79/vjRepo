@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QEReportModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“QEReport.dbo.StudentRankForModule”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="StudentRankForModule">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="PID" />
+      <PropertyRef Name="StudentNumber" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="UpdatedBy" />
+      <PropertyRef Name="UpdatedDate" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PID" Type="int" Nullable="false" />
+    <Property Name="StudentNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Class" Type="varchar" MaxLength="20" />
+    <Property Name="Grade" Type="varchar" MaxLength="20" />
+    <Property Name="School" Type="varchar" MaxLength="50" />
+    <Property Name="District" Type="varchar" MaxLength="50" />
+    <Property Name="Score" Type="float" />
+    <Property Name="RankInClass" Type="int" />
+    <Property Name="RankInSchool" Type="int" />
+    <Property Name="RankInDistrict" Type="int" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedBy" Type="int" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“QEReport.dbo.Table_1”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Table_1">
+          <Property Name="f" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <EntityContainer Name="QEReportModelStoreContainer">
+    <EntitySet Name="StudentRankForModule" EntityType="Self.StudentRankForModule" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [StudentRankForModule].[Id] AS [Id], 
+    [StudentRankForModule].[Name] AS [Name], 
+    [StudentRankForModule].[PID] AS [PID], 
+    [StudentRankForModule].[StudentNumber] AS [StudentNumber], 
+    [StudentRankForModule].[Class] AS [Class], 
+    [StudentRankForModule].[Grade] AS [Grade], 
+    [StudentRankForModule].[School] AS [School], 
+    [StudentRankForModule].[District] AS [District], 
+    [StudentRankForModule].[Score] AS [Score], 
+    [StudentRankForModule].[RankInClass] AS [RankInClass], 
+    [StudentRankForModule].[RankInSchool] AS [RankInSchool], 
+    [StudentRankForModule].[RankInDistrict] AS [RankInDistrict], 
+    [StudentRankForModule].[CreatedBy] AS [CreatedBy], 
+    [StudentRankForModule].[CreatedDate] AS [CreatedDate], 
+    [StudentRankForModule].[UpdatedBy] AS [UpdatedBy], 
+    [StudentRankForModule].[UpdatedDate] AS [UpdatedDate]
+    FROM [dbo].[StudentRankForModule] AS [StudentRankForModule]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

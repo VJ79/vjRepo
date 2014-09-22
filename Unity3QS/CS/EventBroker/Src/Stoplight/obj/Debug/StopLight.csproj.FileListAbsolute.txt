@@ -1,0 +1,1 @@
+D:\GoogleSVN\trunk\Unity3QS\CS\EventBroker\Src\Stoplight\bin\Debug\StopLight.exe.config

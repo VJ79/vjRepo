@@ -1,0 +1,32 @@
+GRIDVIEW无刷新AJAX 排序源码
+
+有幸看到一个无刷新的AJAX GRIDVIEW排序效果，感觉不错，代码也简单，方便！
+利用ajax的UpdatePanel和ajaxToolkitUpdatePanelAnimationExtender的控件实现的数据无刷新操作
+App_Data\customers.xml为GridView数据库
+
+
+作者：witer666
+下载地址：http://www.51aspx.com/CV/GridViewAjax
+                ╭═══════════════╮
+                ║     Asp.net源码下载专业站    ║
+  ╭══════┤     http://www.51aspx.com    ├══════╮
+  ║            ║ 论坛:http://bbs.51aspx.com   ║            ║
+  ║            ╰═══════════════╯            ║
+　║                                                          ║
+　║51aspx声明：                                              ║
+  ║   1) 本站不保证所提供软件或程序的完整性和安全性。        ║
+  ║   2) 转载本站提供的资源请勿删除本说明文件。              ║
+  ║   3) 本站提供的程序均为网上搜集，如果该代码涉及或侵害到您║
+  ║      的版权请立即写信通知我们。                          ║
+  ║   4) 本站提供代码只可供研究使用，请在下载24小时内删除,   ║
+  ║      切勿用于商业用途，由此引起一切后果与本站无关。      ║
+  ║   5) 如果源码有升级或修补，我们会在本站进行，恕不另行通知║
+　║                                                          ║
+  ║           本站专注于Asp.net源码下载                      ║
+  ║           联系方式 : support@51aspx.com                  ║
+  ║    ╭───────────────────────╮    ║
+  ╰══┤  Asp.net源码网 http://www.51aspx.com         ├══╯
+        ╰───────────────────────╯
+友情提示:
+    一般数据库文件默认在DB_51aspx文件夹下
+    如果使用VS2005打开本站项目文件，建议打开前务必安装VS2005Sp1

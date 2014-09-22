@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DynamicJsonParser.DynamicConsoleWriter" Collapsed="true">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABEEAAIVACAAAAAAAAAAAAAAAAiA=</HashCode>
+      <FileName>DynamicConsoleWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicJsonParser.DynamicJsonConverter">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicJsonConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicJsonParser.DynamicJsonObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAIEACAAABAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicJsonObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DynamicJsonParser.DynamicJsonObjectConverter" Collapsed="true">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicJsonObjectConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicJsonParser.Program" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicJsonParser.ReadOnlyDictionary&lt;TKey, TValue&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCIAAAAAAAAEABAQCAAABAUAAAAAAAAAAAAgAABQIAA=</HashCode>
+      <FileName>ReadOnlyDictionary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DynamicJsonParser.Specificity" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specificity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

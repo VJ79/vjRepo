@@ -1,0 +1,303 @@
+BODY {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.5; BACKGROUND-COLOR: white; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; FONT-FAMILY: Verdana; TEXT-AUTOSPACE: ideograph-alpha ideograph-numeric; FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+IMG {
+	BORDER-BOTTOM-COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000; BORDER-LEFT-COLOR: #000000
+}
+.container {
+	TEXT-ALIGN: left; WIDTH: 1000px
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #a00000; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+P {
+	LINE-HEIGHT: 1.5em; FONT-SIZE: 14px
+}
+H1 {
+	FONT-SIZE: 32px
+}
+H2 {
+	FONT-SIZE: 28px
+}
+H3 {
+	FONT-SIZE: 24px
+}
+H4 {
+	FONT-SIZE: 16px
+}
+H5 {
+	FONT-SIZE: 12px
+}
+H6 {
+	FONT-SIZE: 10px
+}
+MARQUEE {
+	BEHAVIOR: url(/Scripts/marquee.htc)
+}
+INPUT {
+	BORDER-BOTTOM: #a9a9ea 1px solid; BORDER-LEFT: #a9a9ea 1px solid; BACKGROUND-COLOR: #f8f8f8; FONT-FAMILY: Verdana; HEIGHT: 18px; BORDER-TOP: #a9a9ea 1px solid; BORDER-RIGHT: #a9a9ea 1px solid
+}
+BUTTON {
+	BACKGROUND-IMAGE: url(/bbs/images/red/menu_bg.gif); BORDER-BOTTOM: #a9a9ea 1px solid; BORDER-LEFT: #a9a9ea 1px solid; PADDING-BOTTOM: 1px; MARGIN: 0px 2px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; HEIGHT: 22px; COLOR: #ffffff; BORDER-TOP: #a9a9ea 1px solid; BORDER-RIGHT: #a9a9ea 1px solid; PADDING-TOP: 1px
+}
+.scroll {
+	WIDTH: 100%; OVERFLOW: auto
+}
+.star {
+	FONT-FAMILY: "Times New Roman"; COLOR: #ff0000
+}
+.scrolltext {
+	COLOR: #cc0000; FONT-WEIGHT: bold
+}
+.red {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.red {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.red:link {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.red:hover {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.red:active {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.red:visited {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.gray {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.gray {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.gray:link {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.gray:hover {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.gray:active {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.gray:visited {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+.black {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.black {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.black:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.black:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.black:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.black:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.white {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.navigator {
+	BACKGROUND-IMAGE: url(/images/navigator.gif); TEXT-ALIGN: center; TEXT-INDENT: 1em; BACKGROUND-POSITION: center 50%; HEIGHT: 39px
+}
+.navigator {
+	COLOR: yellow; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.navigator A:link {
+	COLOR: yellow; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.navigator A:hover {
+	COLOR: yellow; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.navigator A:visited {
+	COLOR: yellow; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.navigator A:active {
+	COLOR: yellow; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.location {
+	BACKGROUND-IMAGE: url(/bbs/images/red/menu_bg.gif); TEXT-ALIGN: left; TEXT-INDENT: 1em; HEIGHT: 30px
+}
+.location {
+	COLOR: white
+}
+.location A:link {
+	COLOR: white
+}
+.location A:hover {
+	COLOR: white
+}
+.location A:visited {
+	COLOR: white
+}
+.location A:active {
+	COLOR: white
+}
+.table_head {
+	BACKGROUND-IMAGE: url(/images/title_bg.gif); BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; HEIGHT: 30px; COLOR: white; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.table_head TD {
+	TEXT-ALIGN: left
+}
+.table_head TH {
+	TEXT-ALIGN: center
+}
+.table_head IMG {
+	CURSOR: pointer
+}
+.table_neck {
+	BACKGROUND-IMAGE: url(/bbs/images/red/catbg.gif); HEIGHT: 20px; COLOR: black
+}
+.table_body {
+	BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #ffffff 1px solid; BACKGROUND-COLOR: #f8f8f8; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.table_line {
+	BACKGROUND-COLOR: #b51408
+}
+.table_main {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; WIDTH: 100%; MARGIN-BOTTOM: 10px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+.table_text {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; OVERFLOW-X: hidden; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; OVERFLOW: auto; PADDING-TOP: 0px
+}
+.table_nav {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.5em; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-SIZE: 12px; PADDING-TOP: 10px
+}
+.table_content {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.5em; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.table_content DIV {
+	LINE-HEIGHT: 1.5em; TEXT-INDENT: 2em; FONT-SIZE: 14px
+}
+.table_content P {
+	LINE-HEIGHT: 1.5em; TEXT-INDENT: 2em; FONT-SIZE: 14px
+}
+.table_frame {
+	BORDER-RIGHT-WIDTH: 0px; WIDTH: 100%; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 180px; OVERFLOW: hidden; BORDER-LEFT-WIDTH: 0px
+}
+UL.table_text {
+	LIST-STYLE-POSITION: inside; LINE-HEIGHT: 20px; MARGIN: 0px; LIST-STYLE-IMAGE: url(/images/dot.gif)
+}
+UL.navigate {
+	MARGIN: 0px; FLOAT: right
+}
+UL.navigate LI {
+	BACKGROUND-IMAGE: url(/bbs/images/red/menu.gif); TEXT-ALIGN: center; PADDING-BOTTOM: 17px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; WIDTH: 78px; PADDING-RIGHT: 0px; FLOAT: left; VERTICAL-ALIGN: middle; PADDING-TOP: 18px
+}
+UL.related {
+	LIST-STYLE-POSITION: inside; PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.header {
+	WIDTH: 1000px; CLEAR: both
+}
+.footer {
+	WIDTH: 1000px; CLEAR: both
+}
+.footer {
+	
+}
+.right {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; WIDTH: 220px; PADDING-RIGHT: 10px; FLOAT: right; PADDING-TOP: 10px
+}
+.left {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FLOAT: left; PADDING-TOP: 10px
+}
+.main1 {
+	WIDTH: 50%; FLOAT: left
+}
+.main2 {
+	WIDTH: 50%; FLOAT: left
+}
+.main1 {
+	
+}
+.main2 {
+	
+}
+.main {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid; PADDING-TOP: 10px
+}
+.main P {
+	LINE-HEIGHT: 1.5em; TEXT-INDENT: 2em; FONT-SIZE: 14px
+}
+.main DIV {
+	LINE-HEIGHT: 1.5em; TEXT-INDENT: 2em; FONT-SIZE: 14px
+}
+.top {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; WIDTH: 980px; PADDING-RIGHT: 10px; CLEAR: both; PADDING-TOP: 10px
+}
+.bottom {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; WIDTH: 980px; PADDING-RIGHT: 10px; CLEAR: both; PADDING-TOP: 0px
+}
+BUTTON.button {
+	BORDER-RIGHT-WIDTH: 0px; WIDTH: 121px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 48px; COLOR: black; BORDER-LEFT-WIDTH: 0px; FONT-WEIGHT: bold
+}
+.table_head .more {
+	TEXT-ALIGN: right
+}
+.img {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; MARGIN-BOTTOM: 10px; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid
+}
+.dashed TD {
+	BORDER-TOP: #3366ff 1px dashed
+}
+.pay_title {
+	PADDING-BOTTOM: 0.5em; COLOR: darkblue; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+#tblLink IMG {
+	MARGIN: 1px
+}
+A.video_title:link {
+	COLOR: #0093bb
+}
+A.video_title:hover {
+	COLOR: #0093bb
+}
+A.video_title:active {
+	COLOR: #0093bb
+}
+A.video_title:visited {
+	COLOR: #0093bb
+}
+.ad {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; MARGIN-BOTTOM: 10px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+#divNav {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #d1121c; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-LEFT: 120px; PADDING-TOP: 5px
+}
+#divNav LI {
+	LIST-STYLE-POSITION: outside; LINE-HEIGHT: 2em; LIST-STYLE-TYPE: none
+}
+#divNav A {
+	COLOR: #fff
+}

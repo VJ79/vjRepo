@@ -1,0 +1,15 @@
+J:\google svn\vs2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+J:\google svn\vs2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+J:\google svn\vs2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+J:\google svn\vs2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.dll
+J:\google svn\vs2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.pdb
+J:\google svn\vs2008\Test\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+J:\google svn\vs2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+J:\google svn\vs2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.dll
+D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.pdb

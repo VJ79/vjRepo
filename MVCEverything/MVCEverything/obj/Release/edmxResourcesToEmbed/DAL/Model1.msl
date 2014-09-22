@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QEReportModelStoreContainer" CdmEntityContainer="QEReportEntities">
+    <EntitySetMapping Name="StudentRankForModules">
+      <EntityTypeMapping TypeName="QEReportModel.StudentRankForModule">
+        <MappingFragment StoreEntitySet="StudentRankForModule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="StudentNumber" ColumnName="StudentNumber" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="RankInClass" ColumnName="RankInClass" />
+          <ScalarProperty Name="RankInSchool" ColumnName="RankInSchool" />
+          <ScalarProperty Name="RankInDistrict" ColumnName="RankInDistrict" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

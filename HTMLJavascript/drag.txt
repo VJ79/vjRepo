@@ -1,0 +1,44 @@
+<script>
+/*
+在id为dragId的元素上执行拖动操作时，改变id为moveId的元素的位置。
+*/
+function RegDrag(dragId,moveId){
+ var drag=document.getElementById(dragId);//拖动的目标，即鼠标按下时的区域。
+ var target=document.getElementById(moveId);//移动的目标，即拖动时移动的区域。
+ target.style.position="absolute";//position属性设置为absulute才可正常移动。
+ var canMove=false;//是否处于可以拖动的状态。
+ var mouseDownX=0,mouseDownY=0;//记录鼠标按下时位置。
+ var mouseDownLeft=0,mouseDownY=0;//记录鼠标按下时移动目标的位置。
+
+ var DragConfig={};//创建一个对象用来管理事件。
+ DragConfig.startMove=function(){
+  drag.setCapture();//使得drag可以捕获全屏幕内的所有事件。
+  /*记录鼠标按下时的状态。*/
+  mouseDownX=event.screenX;
+  mouseDownY=event.screenY;
+  mouseDownLeft=target.offsetLeft;
+  mouseDownTop=target.offsetTop;
+  canMove=true;//是否可以移动标识为true，使doMove方法有效。
+ }
+ DragConfig.doMove=function(){
+  if(canMove){/*如果可以移动，则改变target的位置。*/
+   target.style.left=mouseDownLeft+(event.screenX-mouseDownX);
+   target.style.top=mouseDownTop+(event.screenY-mouseDownY);
+  }
+ }
+ DragConfig.endMove=function(){
+  drag.releaseCapture();//释放drag的事件捕获。
+  canMove=false;//是束可以移动标识为false,doMove方法无效。
+ }
+
+ drag.onmousedown=DragConfig.startMove;//将startMove方法绑定到onmousedown
+ drag.onmousemove=DragConfig.doMove;//将doMove方法绑定到onmousemove
+ drag.onmouseup=DragConfig.endMove;//将endMove方法绑定到onmouseup
+}
+window.onload=function(){//窗体加载成功后执行的操作。
+ RegDrag("drag","drag");//注册拖动。
+}
+</script>
+<div id="move" style="left:-50;width:100;height:100;background-color:#c7c7c7;">
+<div id="drag" style="width:100;height:20;background-color:#969696"></div>
+</div>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        function test() {
+            var input1 = document.getElementById("input1");
+            input1.value = "haha";
+            var button1 = document.getElementById("button1");
+            var div1 = document.getElementById("div1");
+            var ff = "<input type='text' id='input11' value='fdsfdvv' />";
+            div1.appendChild(button1);
+            var button2 = button1.cloneNode();
+            var button3 = document.createElement("input");
+            button3.setAttribute("type", "text");
+            button3.setAttribute("value", "createtext");
+            div1.appendChild(button3);
+            //div1.innerHTML = ff;
+            
+            alert(document.childNodes.item(1).innerHTML);
+            
+        }
+    </script>
+</head>
+<body>
+过放电
+<input type="text" id="input1" />
+<input type="button" id="button1" value="submit" onclick="test()"/>
+<div id="div1">fd</div>
+</body>
+</html>

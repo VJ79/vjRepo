@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{037F43D9-80F4-4DB0-80DC-A53748410357}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3BAA1FC-1469-40F2-81CB-707DE03493B9} = {E3BAA1FC-1469-40F2-81CB-707DE03493B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleService", "ExampleService\ExampleService.csproj", "{E3BAA1FC-1469-40F2-81CB-707DE03493B9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://pagtfs2008:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ExceptionHandling\\ExceptionHandling.csproj
+		SccProjectName1 = ExceptionHandling
+		SccLocalPath1 = ExceptionHandling
+		SccProjectUniqueName2 = ExampleService\\ExampleService.csproj
+		SccProjectName2 = ExampleService
+		SccLocalPath2 = ExampleService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{037F43D9-80F4-4DB0-80DC-A53748410357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037F43D9-80F4-4DB0-80DC-A53748410357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037F43D9-80F4-4DB0-80DC-A53748410357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037F43D9-80F4-4DB0-80DC-A53748410357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3BAA1FC-1469-40F2-81CB-707DE03493B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3BAA1FC-1469-40F2-81CB-707DE03493B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3BAA1FC-1469-40F2-81CB-707DE03493B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3BAA1FC-1469-40F2-81CB-707DE03493B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

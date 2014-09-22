@@ -1,0 +1,17 @@
+E:\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+E:\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+E:\ClassLibrary2\obj\Debug\ResolveAssemblyReference.cache
+E:\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+E:\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+E:\ClassLibrary2\bin\Debug\ClassLibrary1.dll
+E:\ClassLibrary2\bin\Debug\ClassLibrary1.pdb
+J:\google svn\vs2008\Test\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+J:\google svn\vs2008\Test\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+J:\google svn\vs2008\Test\ClassLibrary2\bin\Debug\ClassLibrary1.dll
+J:\google svn\vs2008\Test\ClassLibrary2\bin\Debug\ClassLibrary1.pdb
+J:\google svn\vs2008\Test\ClassLibrary2\obj\Debug\ResolveAssemblyReference.cache
+J:\google svn\vs2008\Test\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+J:\google svn\vs2008\Test\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+D:\GoogleSVN\trunk\VS2008\Test\ClassLibrary2\obj\Debug\ClassLibrary2.csprojResolveAssemblyReference.cache
+D:\GoogleSVN\trunk\VS2008\Test\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+D:\GoogleSVN\trunk\VS2008\Test\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

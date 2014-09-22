@@ -1,0 +1,303 @@
+body {
+	margin: 0px; padding: 0px; width: 100%; text-align: center; line-height: 1.5; font-family: Verdana; font-size: 12px; text-autospace: ideograph-alpha ideograph-numeric; background-color: white;
+}
+img {
+	border-color: rgb(0, 0, 0);
+}
+.container {
+	width: 1000px; text-align: left;
+}
+a:link {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:hover {
+	color: rgb(160, 0, 0); text-decoration: underline;
+}
+a:visited {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+p {
+	line-height: 1.5em; font-size: 14px;
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 12px;
+}
+h6 {
+	font-size: 10px;
+}
+marquee {
+	behavior: url(/Scripts/marquee.htc);
+}
+input {
+	border: 1px solid rgb(169, 169, 234); height: 18px; font-family: Verdana; background-color: rgb(248, 248, 248);
+}
+button {
+	margin: 0px 2px; padding: 1px; border: 1px solid rgb(169, 169, 234); height: 22px; color: rgb(255, 255, 255); background-image: url("/bbs/images/red/menu_bg.gif");
+}
+.scroll {
+	width: 100%; overflow: auto;
+}
+.star {
+	color: rgb(255, 0, 0); font-family: "Times New Roman";
+}
+.scrolltext {
+	color: rgb(204, 0, 0); font-weight: bold;
+}
+.red {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+a.red {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+a.red:link {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+a.red:hover {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+a.red:active {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+a.red:visited {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+.gray {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+a.gray {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+a.gray:link {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+a.gray:hover {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+a.gray:active {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+a.gray:visited {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.black {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a.black {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a.black:link {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a.black:hover {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a.black:active {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a.black:visited {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+.white {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.white {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.white:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.white:hover {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.white:active {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.white:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.navigator {
+	background-position: center; height: 39px; text-align: center; text-indent: 1em; background-image: url("/images/navigator.gif");
+}
+.navigator {
+	color: yellow; font-size: 14px; font-weight: bold;
+}
+.navigator a:link {
+	color: yellow; font-size: 14px; font-weight: bold;
+}
+.navigator a:hover {
+	color: yellow; font-size: 14px; font-weight: bold;
+}
+.navigator a:visited {
+	color: yellow; font-size: 14px; font-weight: bold;
+}
+.navigator a:active {
+	color: yellow; font-size: 14px; font-weight: bold;
+}
+.location {
+	height: 30px; text-align: left; text-indent: 1em; background-image: url("/bbs/images/red/menu_bg.gif");
+}
+.location {
+	color: white;
+}
+.location a:link {
+	color: white;
+}
+.location a:hover {
+	color: white;
+}
+.location a:visited {
+	color: white;
+}
+.location a:active {
+	color: white;
+}
+.table_head {
+	border: 1px solid rgb(255, 255, 255); height: 30px; color: white; background-image: url("/images/title_bg.gif");
+}
+.table_head td {
+	text-align: left;
+}
+.table_head th {
+	text-align: center;
+}
+.table_head img {
+	cursor: pointer;
+}
+.table_neck {
+	height: 20px; color: black; background-image: url("/bbs/images/red/catbg.gif");
+}
+.table_body {
+	border: 1px solid rgb(255, 255, 255); text-align: left; background-color: rgb(248, 248, 248);
+}
+.table_line {
+	background-color: rgb(181, 20, 8);
+}
+.table_main {
+	border: 1px solid rgb(0, 0, 0); width: 100%; margin-bottom: 10px;
+}
+.table_text {
+	padding: 0px 3px; text-align: left; overflow: auto; overflow-x: hidden;
+}
+.table_nav {
+	padding: 10px; line-height: 1.5em; font-size: 12px;
+}
+.table_content {
+	padding: 10px; line-height: 1.5em;
+}
+.table_content div {
+	line-height: 1.5em; text-indent: 2em; font-size: 14px;
+}
+.table_content p {
+	line-height: 1.5em; text-indent: 2em; font-size: 14px;
+}
+.table_frame {
+	border: 0px currentColor; width: 100%; height: 180px; overflow: hidden;
+}
+ul.table_text {
+	margin: 0px; line-height: 20px; list-style-position: inside; list-style-image: url("/images/dot.gif");
+}
+ul.navigate {
+	margin: 0px; float: right;
+}
+ul.navigate li {
+	padding: 18px 0px 17px; width: 78px; text-align: center; vertical-align: middle; float: left; list-style-type: none; background-image: url("/bbs/images/red/menu.gif");
+}
+ul.related {
+	margin: 0px; padding: 10px; list-style-position: inside;
+}
+.header {
+	width: 1000px; clear: both;
+}
+.footer {
+	width: 1000px; clear: both;
+}
+.footer {
+	
+}
+.right {
+	padding: 10px 10px 10px 0px; width: 220px; float: right;
+}
+.left {
+	padding: 10px; float: left;
+}
+.main1 {
+	width: 50%; float: left;
+}
+.main2 {
+	width: 50%; float: left;
+}
+.main1 {
+	
+}
+.main2 {
+	
+}
+.main {
+	padding: 10px; border: 1px solid rgb(0, 0, 0);
+}
+.main p {
+	line-height: 1.5em; text-indent: 2em; font-size: 14px;
+}
+.main div {
+	line-height: 1.5em; text-indent: 2em; font-size: 14px;
+}
+.top {
+	padding: 10px 10px 0px; width: 980px; clear: both;
+}
+.bottom {
+	padding: 0px 10px; width: 980px; clear: both;
+}
+button.button {
+	border: 0px currentColor; width: 121px; height: 48px; color: black; font-weight: bold;
+}
+.table_head .more {
+	text-align: right;
+}
+.img {
+	border: 1px solid rgb(0, 0, 0); margin-bottom: 10px;
+}
+.dashed td {
+	border-top-color: rgb(51, 102, 255); border-top-width: 1px; border-top-style: dashed;
+}
+.pay_title {
+	color: darkblue; padding-bottom: 0.5em; font-size: 12px; font-weight: bold;
+}
+#tblLink img {
+	margin: 1px;
+}
+a.video_title:link {
+	color: rgb(0, 147, 187);
+}
+a.video_title:hover {
+	color: rgb(0, 147, 187);
+}
+a.video_title:active {
+	color: rgb(0, 147, 187);
+}
+a.video_title:visited {
+	color: rgb(0, 147, 187);
+}
+.ad {
+	border: 1px solid rgb(0, 0, 0); margin-bottom: 10px;
+}
+#divNav {
+	padding: 5px 0px; margin-left: 120px; background-color: rgb(209, 18, 28);
+}
+#divNav li {
+	list-style: none; line-height: 2em;
+}
+#divNav a {
+	color: rgb(255, 255, 255);
+}

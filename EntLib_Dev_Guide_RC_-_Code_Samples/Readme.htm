@@ -1,0 +1,1308 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Enterprise Library 5.0 Developer's Guide Examples</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Britannic Bold";
+	panose-1:2 11 9 3 6 7 3 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Condensed";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#4F81BD;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";
+	font-family:"Times New Roman","serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Times New Roman","serif";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Times New Roman","serif";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.msotitlecxspfirst, li.msotitlecxspfirst, div.msotitlecxspfirst
+	{mso-style-name:msotitlecxspfirst;
+	mso-style-link:"Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.msotitlecxspmiddle, li.msotitlecxspmiddle, div.msotitlecxspmiddle
+	{mso-style-name:msotitlecxspmiddle;
+	mso-style-link:"Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.msotitlecxsplast, li.msotitlecxsplast, div.msotitlecxsplast
+	{mso-style-name:msotitlecxsplast;
+	mso-style-link:"Title Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNote, li.ppNote, div.ppNote
+	{mso-style-name:"pp Note";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:7.1pt;
+	line-height:115%;
+	background:#EAF1DD;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNoteIndent, li.ppNoteIndent, div.ppNoteIndent
+	{mso-style-name:"pp Note Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:43.1pt;
+	line-height:115%;
+	background:#EAF1DD;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNoteIndent2, li.ppNoteIndent2, div.ppNoteIndent2
+	{mso-style-name:"pp Note Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:79.2pt;
+	line-height:115%;
+	background:#EAF1DD;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNoteIndent3, li.ppNoteIndent3, div.ppNoteIndent3
+	{mso-style-name:"pp Note Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:115.1pt;
+	line-height:115%;
+	background:#EAF1DD;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppBodyText, li.ppBodyText, div.ppBodyText
+	{mso-style-name:"pp Body Text";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppBodyTextIndent, li.ppBodyTextIndent, div.ppBodyTextIndent
+	{mso-style-name:"pp Body Text Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppBodyTextIndent2, li.ppBodyTextIndent2, div.ppBodyTextIndent2
+	{mso-style-name:"pp Body Text Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.ppBulletListChar
+	{mso-style-name:"pp Bullet List Char";
+	mso-style-link:"pp Bullet List";
+	font-family:"Times New Roman","serif";}
+p.ppBulletList, li.ppBulletList, div.ppBulletList
+	{mso-style-name:"pp Bullet List";
+	mso-style-link:"pp Bullet List Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:37.7pt;
+	text-indent:-17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppBulletListIndent, li.ppBulletListIndent, div.ppBulletListIndent
+	{mso-style-name:"pp Bullet List Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:71.7pt;
+	text-indent:-17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppBulletListTable, li.ppBulletListTable, div.ppBulletListTable
+	{mso-style-name:"pp Bullet List Table";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:45.35pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppChapterNumber, li.ppChapterNumber, div.ppChapterNumber
+	{mso-style-name:"pp Chapter Number";
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	line-height:95.0pt;
+	text-autospace:none;
+	font-size:76.0pt;
+	font-family:"Franklin Gothic Condensed";}
+p.ppChapterTitle, li.ppChapterTitle, div.ppChapterTitle
+	{mso-style-name:"pp Chapter Title";
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:29.0pt;
+	margin-left:0cm;
+	line-height:30.0pt;
+	text-autospace:none;
+	font-size:30.0pt;
+	font-family:"Franklin Gothic Condensed";
+	letter-spacing:.75pt;}
+p.ppCode, li.ppCode, div.ppCode
+	{mso-style-name:"pp Code";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeCxSpFirst, li.ppCodeCxSpFirst, div.ppCodeCxSpFirst
+	{mso-style-name:"pp CodeCxSpFirst";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeCxSpMiddle, li.ppCodeCxSpMiddle, div.ppCodeCxSpMiddle
+	{mso-style-name:"pp CodeCxSpMiddle";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeCxSpLast, li.ppCodeCxSpLast, div.ppCodeCxSpLast
+	{mso-style-name:"pp CodeCxSpLast";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent, li.ppCodeIndent, div.ppCodeIndent
+	{mso-style-name:"pp Code Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndentCxSpFirst, li.ppCodeIndentCxSpFirst, div.ppCodeIndentCxSpFirst
+	{mso-style-name:"pp Code IndentCxSpFirst";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndentCxSpMiddle, li.ppCodeIndentCxSpMiddle, div.ppCodeIndentCxSpMiddle
+	{mso-style-name:"pp Code IndentCxSpMiddle";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndentCxSpLast, li.ppCodeIndentCxSpLast, div.ppCodeIndentCxSpLast
+	{mso-style-name:"pp Code IndentCxSpLast";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent2, li.ppCodeIndent2, div.ppCodeIndent2
+	{mso-style-name:"pp Code Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent2CxSpFirst, li.ppCodeIndent2CxSpFirst, div.ppCodeIndent2CxSpFirst
+	{mso-style-name:"pp Code Indent 2CxSpFirst";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent2CxSpMiddle, li.ppCodeIndent2CxSpMiddle, div.ppCodeIndent2CxSpMiddle
+	{mso-style-name:"pp Code Indent 2CxSpMiddle";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent2CxSpLast, li.ppCodeIndent2CxSpLast, div.ppCodeIndent2CxSpLast
+	{mso-style-name:"pp Code Indent 2CxSpLast";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeLanguage, li.ppCodeLanguage, div.ppCodeLanguage
+	{mso-style-name:"pp Code Language";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#EFEFF7;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#000066;
+	font-weight:bold;}
+p.ppCodeLanguageIndent, li.ppCodeLanguageIndent, div.ppCodeLanguageIndent
+	{mso-style-name:"pp Code Language Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#EFEFF7;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#000066;
+	font-weight:bold;}
+p.ppCodeLanguageIndent2, li.ppCodeLanguageIndent2, div.ppCodeLanguageIndent2
+	{mso-style-name:"pp Code Language Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#EFEFF7;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#000066;
+	font-weight:bold;}
+p.ppCodeLanguageTable, li.ppCodeLanguageTable, div.ppCodeLanguageTable
+	{mso-style-name:"pp Code Language Table";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#EFEFF7;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#000066;
+	font-weight:bold;}
+p.ppCodeTable, li.ppCodeTable, div.ppCodeTable
+	{mso-style-name:"pp Code Table";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeTableCxSpFirst, li.ppCodeTableCxSpFirst, div.ppCodeTableCxSpFirst
+	{mso-style-name:"pp Code TableCxSpFirst";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeTableCxSpMiddle, li.ppCodeTableCxSpMiddle, div.ppCodeTableCxSpMiddle
+	{mso-style-name:"pp Code TableCxSpMiddle";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeTableCxSpLast, li.ppCodeTableCxSpLast, div.ppCodeTableCxSpLast
+	{mso-style-name:"pp Code TableCxSpLast";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppFigure, li.ppFigure, div.ppFigure
+	{mso-style-name:"pp Figure";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppFigureCaption, li.ppFigureCaption, div.ppFigureCaption
+	{mso-style-name:"pp Figure Caption";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.ppFigureCaptionIndent, li.ppFigureCaptionIndent, div.ppFigureCaptionIndent
+	{mso-style-name:"pp Figure Caption Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.ppFigureCaptionIndent2, li.ppFigureCaptionIndent2, div.ppFigureCaptionIndent2
+	{mso-style-name:"pp Figure Caption Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.ppFigureIndent, li.ppFigureIndent, div.ppFigureIndent
+	{mso-style-name:"pp Figure Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppFigureIndent2, li.ppFigureIndent2, div.ppFigureIndent2
+	{mso-style-name:"pp Figure Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppFigureNumber, li.ppFigureNumber, div.ppFigureNumber
+	{mso-style-name:"pp Figure Number";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.ppFigureNumberIndent, li.ppFigureNumberIndent, div.ppFigureNumberIndent
+	{mso-style-name:"pp Figure Number Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.ppFigureNumberIndent2, li.ppFigureNumberIndent2, div.ppFigureNumberIndent2
+	{mso-style-name:"pp Figure Number Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.ppListBodyText, li.ppListBodyText, div.ppListBodyText
+	{mso-style-name:"pp List Body Text";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNumberList, li.ppNumberList, div.ppNumberList
+	{mso-style-name:"pp Number List";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:37.7pt;
+	text-indent:-17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppListEnd, li.ppListEnd, div.ppListEnd
+	{mso-style-name:"pp List End";
+	margin-top:0cm;
+	margin-right:216.0pt;
+	margin-bottom:6.0pt;
+	margin-left:8.65pt;
+	text-align:right;
+	font-size:6.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNoteBullet, li.ppNoteBullet, div.ppNoteBullet
+	{mso-style-name:"pp Note Bullet";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	background:#EAF1DD;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNumberListIndent, li.ppNumberListIndent, div.ppNumberListIndent
+	{mso-style-name:"pp Number List Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:71.7pt;
+	text-indent:-17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNumberListTable, li.ppNumberListTable, div.ppNumberListTable
+	{mso-style-name:"pp Number List Table";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppProcedureStart, li.ppProcedureStart, div.ppProcedureStart
+	{mso-style-name:"pp Procedure Start";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.ppSection, li.ppSection, div.ppSection
+	{mso-style-name:"pp Section";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#333399;
+	font-weight:bold;}
+p.ppShowMe, li.ppShowMe, div.ppShowMe
+	{mso-style-name:"pp Show Me";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Britannic Bold","sans-serif";
+	color:navy;}
+p.ppTableText, li.ppTableText, div.ppTableText
+	{mso-style-name:"pp Table Text";
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	line-height:13.0pt;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+p.ppTopic, li.ppTopic, div.ppTopic
+	{mso-style-name:"pp Topic";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.ppTopicCxSpFirst, li.ppTopicCxSpFirst, div.ppTopicCxSpFirst
+	{mso-style-name:"pp TopicCxSpFirst";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.ppTopicCxSpMiddle, li.ppTopicCxSpMiddle, div.ppTopicCxSpMiddle
+	{mso-style-name:"pp TopicCxSpMiddle";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.ppTopicCxSpLast, li.ppTopicCxSpLast, div.ppTopicCxSpLast
+	{mso-style-name:"pp TopicCxSpLast";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.ppBodyTextIndent3, li.ppBodyTextIndent3, div.ppBodyTextIndent3
+	{mso-style-name:"pp Body Text Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:108.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppBulletListIndent2, li.ppBulletListIndent2, div.ppBulletListIndent2
+	{mso-style-name:"pp Bullet List Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:105.75pt;
+	text-indent:-17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppNumberListIndent2, li.ppNumberListIndent2, div.ppNumberListIndent2
+	{mso-style-name:"pp Number List Indent 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:105.75pt;
+	text-indent:-17.85pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppCodeIndent3, li.ppCodeIndent3, div.ppCodeIndent3
+	{mso-style-name:"pp Code Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:108.0pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent3CxSpFirst, li.ppCodeIndent3CxSpFirst, div.ppCodeIndent3CxSpFirst
+	{mso-style-name:"pp Code Indent 3CxSpFirst";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent3CxSpMiddle, li.ppCodeIndent3CxSpMiddle, div.ppCodeIndent3CxSpMiddle
+	{mso-style-name:"pp Code Indent 3CxSpMiddle";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeIndent3CxSpLast, li.ppCodeIndent3CxSpLast, div.ppCodeIndent3CxSpLast
+	{mso-style-name:"pp Code Indent 3CxSpLast";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:108.0pt;
+	line-height:13.0pt;
+	background:#F7F7FF;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Consolas;}
+p.ppCodeLanguageIndent3, li.ppCodeLanguageIndent3, div.ppCodeLanguageIndent3
+	{mso-style-name:"pp Code Language Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#EFEFF7;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#000066;
+	font-weight:bold;}
+p.ppFigureIndent3, li.ppFigureIndent3, div.ppFigureIndent3
+	{mso-style-name:"pp Figure Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.ppFigureCaptionIndent3, li.ppFigureCaptionIndent3, div.ppFigureCaptionIndent3
+	{mso-style-name:"pp Figure Caption Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:108.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.ppFigureNumberIndent3, li.ppFigureNumberIndent3, div.ppFigureNumberIndent3
+	{mso-style-name:"pp Figure Number Indent 3";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1><a name="_Toc247699671"></a><a name="_Toc247700285"></a><span lang=EN-US>Enterprise
+Library 5.0 Developer's Guide Examples</span></h1>
+
+<h2><a name="_Toc247699672"></a><a name="_Toc247700286"></a><span lang=EN-US>Microsoft
+patterns &amp; practices</span><span lang=EN-US> </span></h2>
+
+<p class=ppBodyText><i><span lang=EN-US style='font-size:9.0pt;line-height:
+115%'>Copyright © Microsoft Corporation.&nbsp; All rights reserved.</span></i></p>
+
+<p class=ppBodyText><i><span lang=EN-US style='font-size:9.0pt;line-height:
+115%'>THIS CODE AND INFORMATION IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY</span></i></p>
+
+<p class=ppBodyText><i><span lang=EN-US style='font-size:9.0pt;line-height:
+115%'>OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT</span></i></p>
+
+<p class=ppBodyText><i><span lang=EN-US style='font-size:9.0pt;line-height:
+115%'>LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND</span></i></p>
+
+<p class=ppBodyText><i><span lang=EN-US style='font-size:9.0pt;line-height:
+115%'>FITNESS FOR A PARTICULAR PURPOSE.</span></i></p>
+
+<p class=MsoTocHeading><span lang=EN-US>Contents</span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700287">The Example Applications<span style='color:windowtext;
+display:none;text-decoration:none'>. 1</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700288">The Example Databases<span style='color:windowtext;
+display:none;text-decoration:none'>. 2</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700289">Notes for the Caching Example<span style='color:windowtext;
+display:none;text-decoration:none'>. 2</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700290">Notes for the Cryptography Example<span style='color:
+windowtext;display:none;text-decoration:none'>. 3</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700291">Notes for the Data Access Example<span style='color:windowtext;
+display:none;text-decoration:none'>. 3</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700292">Notes for the Exception Handling Example<span
+style='color:windowtext;display:none;text-decoration:none'>. 3</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700293">Notes for the Logging Example<span style='color:windowtext;
+display:none;text-decoration:none'>. 4</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc247700294">Notes for the Security Example<span style='color:windowtext;
+display:none;text-decoration:none'>. 5</span></a></span></span></p>
+
+<p class=MsoListParagraph style='margin-left:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700287"><span lang=EN-US>The Example Applications</span></a></h2>
+
+<p class=ppBodyText><span lang=EN-US>Each folder contains the example
+application for the specific chapter of the Enterprise Library 5.0 Developer's
+Guide. These are Console projects. You can run the compiled example application
+from the bin\Debug folder, or open the solution in Visual Studio. The examples
+are Visual Studio 2008 projects. If you open the projects in Visual Studio
+2010, they will be converted for use with that release.</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700288"><span lang=EN-US>The Example Databases</span></a></h2>
+
+<p class=ppBodyText><span lang=EN-US>Several of the examples make use of a SQL
+Server Express database file located in the bin\Debug folder, which is
+auto-attached when you run the example. If you wish to use a different
+database, you can use the scripts included with these examples to create a
+suitable database. You must edit the connection strings in the App.config file
+or by using the Enterprise Library configuration tool if you use a different
+database.</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700289"><span lang=EN-US>Notes for the Caching Example</span></a></h2>
+
+<h4><span lang=EN-US>Before You Attempt to Run the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>You must create a new encryption key for
+the Caching block to use to encrypt the data in one of the examples that uses a
+Symmetric Encryption provider. This is because the key is tied to either the
+user or the machine, and so the key included in the sample files will not work
+on your machine. In the configuration console, navigate to the Symmetric
+Providers section of the Cryptography Application Block Settings and select the
+RijndaelManaged provider. Click the &quot;...&quot; button in the Key property
+to start the Key Wizard. Use this wizard to generate a new key,
+save the key file, and automatically update the content of App.config.</span></p>
+
+<h4><span lang=EN-US>Viewing the Expired and Invalidated Cache Items</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>Depending on the performance of your
+machine, you may need to change the value configured for the Expiration Poll
+Frequency of the Cache Manager in order to see the invalidated item in the
+cache and the contents after the scavenging cycle completes.</span></p>
+
+<h4><span lang=EN-US>Isolated Storage Errors</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>If you find that you get an error when you
+re-run this example, it may be because the backing store provider cannot
+correctly access your local isolated storage store. In most cases, you can
+resolve this by deleting the previously cached contents. Open the folder
+Users\&lt;your-user-name&gt;\AppData\Local\IsolatedStorage, and expand each of the
+subfolders until you find the Files\CachingExample subfolder. Then delete this
+entire folder tree. You should avoid deleting all of the folders in your
+IsolatedStorage folder as these may contain data used by other applications.</span></p>
+
+<h4><span lang=EN-US>Database Error When Running the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>Use the Services MMC snap-in in your
+Administrative Tools folder to check that the SQL Server (SQLEXPRESS) database
+service (the service is named MSSQL$SQLEXPRESS) is running.</span></p>
+
+<h4><span lang=EN-US>Using an Alternative Database</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>The connection string for the database we
+provide with this example is:</span></p>
+
+<p class=ppBodyText><span lang=EN-US>Data Source=.\SQLEXPRESS;
+AttachDbFilename=|DataDirectory|\Caching.mdf; Integrated Security=True; User
+Instance=True </span></p>
+
+<p class=ppBodyText><span lang=EN-US>If you have configured a different
+database using the scripts provided the example, you may find that you get an
+error when you run this example. It is likely to be that you have an invalid
+connection string in your App.config file for your database</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700290"><span lang=EN-US>Notes for the Cryptography Example</span></a></h2>
+
+<h4><span lang=EN-US>Before you Attempt to Run the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>You must create new encryption keys for
+the block to use to encrypt the data when using a Symmetric Encryption
+provider. This is because the key is tied to either the user or the machine,
+and so the key included in the sample files will not work on your machine. In
+the configuration console, select the AesManaged Symmetric Provider, and click
+the &quot;...&quot; button in the Key property to start the Key
+Wizard. Use this wizard to generate a new key, save the key file, and
+automatically update the content of App.config. Then repeat this procedure for
+the RijndaelManager Symmetric Provider.</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700291"><span lang=EN-US>Notes for the Data Access Example</span></a></h2>
+
+<h4><span lang=EN-US>Database Error When Running the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>Use the Services MMC snap-in in your
+Administrative Tools folder to check that the SQL Server (SQLEXPRESS) database
+service (the service is named MSSQL$SQLEXPRESS) is running.</span></p>
+
+<h4><span lang=EN-US>DTC Error When Running the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>The final example for this block uses the
+Distributed Transaction Coordinator service. This service may not be set to auto-start
+on your machine. If you receive an error that the DTC service is not available,
+open the Services MMC snap-in from your Administrative Tools menu and start the service
+manually, then run the example again.</span></p>
+
+<h4><span lang=EN-US>Using an Alternative Database</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>The two connections strings for the
+database we provide with this example are:</span></p>
+
+<p class=ppBodyText><span lang=EN-US>Data
+Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\WWPlatform.mdf;Integrated
+Security=True;User Instance=True</span></p>
+
+<p class=ppBodyText><span lang=EN-US>Asynchronous Processing=true;Data
+Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\WWPlatform.mdf;Integrated
+Security=True;User Instance=True </span></p>
+
+<p class=ppBodyText><span lang=EN-US>If you have configured a different
+database using the scripts provided with the example, you may find that you get
+an error when you run this example. It is likely to be that you have an invalid
+connection string in your App.config file for your database. </span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700292"><span lang=EN-US>Notes for the Exception Handling
+Example</span></a></h2>
+
+<h4><span lang=EN-US>Running the Examples in Visual Studio</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>If you run the examples under the Visual
+Studio debugger, you will find that the code halts when an exception
+occurs—before it is sent to the Exception Handling block. However, you can run
+the examples by pressing Ctrl-F5 (non-debugging mode) to prevent this
+happening.</span></p>
+
+<h4><span lang=EN-US>Running the WCF Exception Shielding Example</span></h4>
+
+<p class=MsoNormal><span lang=EN-US>You can run this example in one of three
+ways:</span></p>
+
+<p class=ppBulletList><span lang=EN-US style='font-family:Symbol'>·</span><span
+lang=EN-US style='font-size:7.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=EN-US>Inside Visual Studio by starting it with <i>F5</i>
+(debugging mode) and then pressing <i>F5</i> again when the debugger halts at
+the exception in the <b>SalaryCalculator</b> class.</span></p>
+
+<p class=ppBulletList><span lang=EN-US style='font-family:Symbol'>·</span><span
+lang=EN-US style='font-size:7.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=EN-US>Inside Visual Studio by right-clicking
+SalaryService.svc in Solution Explorer and selecting <b>View in Browser</b> to
+start the service, then pressing <i>Ctrl-F5</i> (non-debugging mode) to run the
+application.</span></p>
+
+<p class=ppBulletList><span lang=EN-US style='font-family:Symbol'>·</span><span
+lang=EN-US style='font-size:7.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=EN-US>By starting the <b>SalaryService</b> in Visual Studio
+(as described in previous bullet) and then running the executable file <b>ExceptionHandlingExample.exe</b>
+in the <b>bin\debug</b> folder directly.</span></p>
+
+<h4><span lang=EN-US>Visual Basic Language Features</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>The examples are designed to run on Visual
+Studio 2008 and Visual Studio 2010. For this reason, the code does not take
+advantage of new languages capabilities in Visual Basic, such as complex Lambda
+expressions and automatically implemented properties. </span></p>
+
+<p class=ppBodyText><span lang=EN-US>The Exception Handling block Process
+method is optimized for use with Lambda expressions, which are supported in C#
+3.0 on version 3.5 of the .NET Framework and in Visual Studio 2008 onwards.
+However, Visual Basic only fully supports Lambda expressions in version 10 on
+version 4.0 of the .NET Framework and in Visual Studio 2010. However, you can use
+simple lambda expressions with the Process method if you are using Visual Basic
+version 9 on version 3.5 of the .NET Framework and in Visual Studio 2008. If
+you are not familiar with lambda functions or their syntax, see
+http://msdn.microsoft.com/en-us/library/bb397687.aspx (C#) or
+http://msdn.microsoft.com/en-us/library/bb531253.aspx (Visual Basic). For a
+full explanation of using the HandleException method, see the “Key Scenarios”
+topic in the online documentation for Enterprise Library 4.1 at http://msdn.microsoft.com/en-us/library/dd203198.aspx.</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700293"><span lang=EN-US>Notes for the Logging Example</span></a></h2>
+
+<h4><span lang=EN-US>Database Error When Running the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>Use the Services MMC snap-in in your
+Administrative Tools folder to check that the SQL Server (SQLEXPRESS) database
+service (the service is named MSSQL$SQLEXPRESS) is running.</span></p>
+
+<h4><span lang=EN-US>Using an Alternative Database</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>The connection string for the database we
+provide with this example is:</span></p>
+
+<p class=ppBodyText><span lang=EN-US>Data
+Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Logging.mdf;Integrated
+Security=True;User Instance=True</span></p>
+
+<p class=ppBodyText><span lang=EN-US>If you have configured a different
+database using the scripts provided with the example, you may find that you get
+an error when you run this example. It is likely to be that you have an invalid
+connection string in your App.config file for your database. </span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc247700294"><span lang=EN-US>Notes for the Security Example</span></a></h2>
+
+<h4><span lang=EN-US>Before you Attempt to Run the Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>You must create new encryption keys for
+the block to use to encrypt the data when using a Symmetric Encryption
+provider. This is because the key is tied to either the user or the machine,
+and so the key included in the sample files will not work on your machine. In
+the configuration console, select the RijndaelManager Symmetric Provider, and click
+the &quot;...&quot; button in the Key property to start the Key
+Wizard. Use this wizard to generate a new key, save the key file, and
+automatically update the content of App.config.</span></p>
+
+<h4><span lang=EN-US>Running the AzMan Provider Example</span></h4>
+
+<p class=ppBodyText><span lang=EN-US>Windows Authorization Manager (AzMan)
+depends on being able to access Windows account details using the Security
+Identifier (SID), and so rules in the file named Example.xml we provide with
+the examples will not actually be able to authenticate you on your machine. You
+can open the file in the Windows Authorization Manager (a snap-in for the
+Microsoft Management Console) and edit the rules to specify your own local or
+domain accounts to experiment with AzMan authorization.</span></p>
+
+<p class=ppBodyText><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

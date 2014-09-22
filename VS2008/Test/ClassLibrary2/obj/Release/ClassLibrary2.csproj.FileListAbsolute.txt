@@ -1,0 +1,7 @@
+E:\ClassLibrary2\bin\Release\ClassLibrary2.dll
+E:\ClassLibrary2\bin\Release\ClassLibrary2.pdb
+E:\ClassLibrary2\obj\Release\ResolveAssemblyReference.cache
+E:\ClassLibrary2\obj\Release\ClassLibrary2.dll
+E:\ClassLibrary2\obj\Release\ClassLibrary2.pdb
+E:\ClassLibrary2\bin\Release\ClassLibrary1.dll
+E:\ClassLibrary2\bin\Release\ClassLibrary1.pdb

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        function switch_state(img, obj) {
+            if (obj.style.display == "none") {
+                obj.style.display = "block";
+                img.innerHTML = 'zhankai';
+            }
+            else {
+                obj.style.display = "none";
+                img.innerHTML = 'shousuo';
+            }
+            img.style.display = "none";
+        }
+    </script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>    
+</head>
+
+<body>
+    <table class="table_main" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="table_head">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="25">
+                                    &nbsp;
+                                </td>
+                                <th style="text-align: left">
+                                    文章资讯 - 最近热点
+                                </th>
+                                <td style="text-align: right">
+                                    <a class="white" href="javascript:frmHot.window.location.reload()">刷新</a> <a class="white"
+                                        href="http://www.zhihuangjin.com/article/index.php?catalogId=10" target="_blank">
+                                        更多</a> <a class="white" href="javascript:switch_state(this, tblHot);">缩小</a>                                     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="tblHot" class="table_body">
+                    <iframe id="frmHot" height="320" src="黄金价格黄金纸黄金!%20-%20纸黄金网_files/hot.htm" frameborder="0"
+                        width="100%"></iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+D:\GoogleSVN\trunk\Unity3\Source\bin\Desktop\Debug\Microsoft.Practices.Unity.xml
+D:\GoogleSVN\trunk\Unity3\Source\bin\Desktop\Debug\Microsoft.Practices.Unity.dll
+D:\GoogleSVN\trunk\Unity3\Source\bin\Desktop\Debug\Microsoft.Practices.Unity.pdb
+D:\GoogleSVN\trunk\Unity3\Source\bin\Desktop\Debug\Microsoft.Practices.Unity.dll.CodeAnalysisLog.xml
+D:\GoogleSVN\trunk\Unity3\Source\bin\Desktop\Debug\Microsoft.Practices.Unity.dll.lastcodeanalysissucceeded
+D:\GoogleSVN\trunk\Unity3\Source\Unity\Src\obj\Debug\Unity.csprojResolveAssemblyReference.cache
+D:\GoogleSVN\trunk\Unity3\Source\Unity\Src\obj\Debug\Microsoft.Practices.Unity.Properties.Resources.resources
+D:\GoogleSVN\trunk\Unity3\Source\Unity\Src\obj\Debug\Unity.csproj.GenerateResource.Cache
+D:\GoogleSVN\trunk\Unity3\Source\Unity\Src\obj\Debug\Microsoft.Practices.Unity.dll
+D:\GoogleSVN\trunk\Unity3\Source\Unity\Src\obj\Debug\Microsoft.Practices.Unity.pdb

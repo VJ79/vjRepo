@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+.div { color:red; }
+</style>
+</head>
+<body>
+rewqrewrewrrfewf
+<div class="div">
+3333
+<input type="text" value="test111"/>
+<input type="text" value="test0"/>
+<input type="button" id="btn" value="test" onclick="ctest()">ddddddddddddd
+<div>11111111111</div>
+<input type="text" value="test1"/>
+<input type="text" value="test2"/>
+<input type="text" value="test3"/>
+<input type="text" value="test4"/>
+</div>
+</body>
+<script>
+var scr = document.createElement('script');
+scr.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
+document.head.appendChild(scr);
+scr.onload = function(){
+    $('div').attr('class', '').attr('id', '').css({
+        'margin' : 0,
+        'padding' : 0,
+        'width': '100%',
+        'clear':'both'
+    });
+	
+	//$("#btn ~ input").attr("value","teeeeeeeeee");
+};
+function ctest(){
+$("#btn ~ input").attr("value","teeeeeeeeee");
+}
+
+var str = "abcabc"; 
+var patt = new RegExp("a.*?c","g");
+var result;
+
+while ((result = patt.exec(str)) != null)  {
+  document.write(result);
+  document.write("<br />");
+  document.write(result.lastIndex);
+ }
+ 
+ var str="Is this all there is";
+var patt1=/is a(?!all)/gi;
+  document.write("<br />");
+document.write(str.search(patt1));
+  document.write("<br />");
+document.write(str.split(patt1));
+
+
+</script>
+</html>

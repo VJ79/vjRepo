@@ -1,0 +1,14 @@
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\StopLight.exe.config
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\StopLight.exe
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\StopLight.pdb
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\Microsoft.Practices.Unity.dll
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\Microsoft.Practices.Unity.xml
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\obj\Debug\StopLight.csprojResolveAssemblyReference.cache
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\obj\Debug\StopLight.Properties.Resources.resources
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\obj\Debug\StopLight.UI.StoplightForm.resources
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\obj\Debug\StopLight.csproj.GenerateResource.Cache
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\obj\Debug\StopLight.exe
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\obj\Debug\StopLight.pdb
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Src\bin\Debug\Microsoft.Practices.ServiceLocation.dll

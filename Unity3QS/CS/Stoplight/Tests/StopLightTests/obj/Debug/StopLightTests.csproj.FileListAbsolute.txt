@@ -1,0 +1,10 @@
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\StopLightTests.dll
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\StopLightTests.pdb
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\StopLight.exe
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\StopLight.pdb
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\Microsoft.Practices.Unity.xml
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\obj\Debug\StopLightTests.csprojResolveAssemblyReference.cache
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\obj\Debug\StopLightTests.dll
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\obj\Debug\StopLightTests.pdb
+D:\GoogleSVN\trunk\Unity3QS\CS\Stoplight\Tests\StopLightTests\bin\Debug\Microsoft.Practices.ServiceLocation.dll

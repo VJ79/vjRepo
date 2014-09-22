@@ -1,0 +1,13 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <PropertyGroup>
+  <Welcome>Hello MSBuild!</Welcome>
+ </PropertyGroup>
+ 
+ <Target Name="Build">
+  <Message Text="$(Hello)" />
+ </Target>
+</Project>
+ 
+ 
+ 
+ 
