@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MVCEverything.Models;
+using ClaySharp;
 
 namespace MVCEverything.Controllers
 {
@@ -18,7 +19,13 @@ namespace MVCEverything.Controllers
         // GET: /Student1/
         public ActionResult Index()
         {
-            
+            dynamic New = new ClayFactory();
+            var person = New.Pserson();
+            person.FirstName = "Louis";
+            person.LastName = "Dejardin";
+            person.SayFullName = new Func<string, string>(x => person.FirstName + person.LastName + x);
+
+            Console.WriteLine(person.SayFullName()(" Here!"));
             return View(db.Students.ToList());
         }
 

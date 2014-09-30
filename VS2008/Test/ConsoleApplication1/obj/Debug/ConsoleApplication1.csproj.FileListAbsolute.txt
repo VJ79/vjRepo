@@ -13,3 +13,13 @@ D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1
 D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.dll
 D:\GoogleSVN\trunk\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.pdb
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.dll
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary1.pdb
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary2.dll
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleApplication1\bin\Debug\ClassLibrary2.pdb

@@ -3,3 +3,8 @@ D:\GoogleSVN\trunk\VS2008\Test\WcfService1\bin\WcfService1.pdb
 D:\GoogleSVN\trunk\VS2008\Test\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
 D:\GoogleSVN\trunk\VS2008\Test\WcfService1\obj\Debug\WcfService1.dll
 D:\GoogleSVN\trunk\VS2008\Test\WcfService1\obj\Debug\WcfService1.pdb
+D:\vjRepo\vjrepo\VS2008\Test\WcfService1\bin\WcfService1.dll.config
+D:\vjRepo\vjrepo\VS2008\Test\WcfService1\bin\WcfService1.dll
+D:\vjRepo\vjrepo\VS2008\Test\WcfService1\bin\WcfService1.pdb
+D:\vjRepo\vjrepo\VS2008\Test\WcfService1\obj\Debug\WcfService1.dll
+D:\vjRepo\vjrepo\VS2008\Test\WcfService1\obj\Debug\WcfService1.pdb

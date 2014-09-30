@@ -16,3 +16,11 @@ D:\GoogleSVN\trunk\VS2008\Test\Test\bin\Debug\Test.exe.config
 D:\GoogleSVN\trunk\VS2008\Test\Test\bin\Debug\Test.exe
 D:\GoogleSVN\trunk\VS2008\Test\Test\bin\Debug\Test.pdb
 D:\GoogleSVN\trunk\VS2008\Test\Test\obj\Debug\Test.pdb
+D:\vjRepo\vjrepo\VS2008\Test\Test\bin\Debug\Test.exe.config
+D:\vjRepo\vjrepo\VS2008\Test\Test\bin\Debug\Test.exe
+D:\vjRepo\vjrepo\VS2008\Test\Test\bin\Debug\Test.pdb
+D:\vjRepo\vjrepo\VS2008\Test\Test\obj\Debug\Test.Form1.resources
+D:\vjRepo\vjrepo\VS2008\Test\Test\obj\Debug\Test.Properties.Resources.resources
+D:\vjRepo\vjrepo\VS2008\Test\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+D:\vjRepo\vjrepo\VS2008\Test\Test\obj\Debug\Test.exe
+D:\vjRepo\vjrepo\VS2008\Test\Test\obj\Debug\Test.pdb

@@ -5,6 +5,7 @@
 }
 
 @{
+     
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "登录";
 
@@ -60,7 +61,8 @@
 <hgroup class="title">
     <h1>@Page.Title.</h1>
 </hgroup>
-
+/////////////////
+@System.Security.Principal.WindowsIdentity.GetCurrent().Name
 <section id="loginForm">
     <h2>使用本地帐户登录。</h2>
     <form method="post">

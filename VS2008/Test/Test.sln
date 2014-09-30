@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C6B91E2C-B829-4A58-A3A4-F702954446A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{FE99C03D-376A-4AE9-A076-E59B4BE246CB}"
@@ -12,9 +14,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 		{B33C7C07-C0EF-4CFE-B56C-35879AF08F37} = {B33C7C07-C0EF-4CFE-B56C-35879AF08F37}
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1", "WebSite1\", "{2537AA48-D93B-4132-8AB0-F88AB3BE4486}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1(1)", "WebSite1\", "{2537AA48-D93B-4132-8AB0-F88AB3BE4486}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		ProjectReferences = "{E7F7778B-5CB6-4E00-87B6-B3FF7DB2F485}|ClassLibrary2.dll;{FE99C03D-376A-4AE9-A076-E59B4BE246CB}|ClassLibrary1.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/WebSite1"
 		Debug.AspNetCompiler.PhysicalPath = "WebSite1\"
@@ -31,6 +33,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1", "WebSite1\", "{2
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "16500"
+		SlnRelativePath = "WebSite1\"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{B33C7C07-C0EF-4CFE-B56C-35879AF08F37}"

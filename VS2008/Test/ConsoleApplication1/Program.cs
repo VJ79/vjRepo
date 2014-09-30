@@ -17,6 +17,7 @@ namespace ConsoleApplication1
 
         static void Main()
         {
+            ClassLibrary1.Program.test();
             AnyClass.test();
             //ConsoleApplication1.SQLserver.Xml.testXML();
             ConsoleApplication1.ExpressionTest.test.tes();

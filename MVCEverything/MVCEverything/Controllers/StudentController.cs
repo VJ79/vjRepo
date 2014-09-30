@@ -8,6 +8,11 @@ using System.Web;
 using System.Web.Mvc;
 using MVCEverything.Models;
 using System.Data.Entity.Migrations;
+using ClaySharp;
+using System.Runtime.Serialization.Json;
+using System.Text;
+using System.Xml.Linq;
+using System.Xml;
 
 namespace MVCEverything.Controllers
 {
@@ -19,6 +24,17 @@ namespace MVCEverything.Controllers
         [ActionName("Index")]
         public ActionResult tt()
         {
+            Program.test();
+            var str="{a:1,b:'5'}";
+            dynamic v = Parse(str);
+
+            dynamic New = new ClayFactory();
+            var person = New.Pserson();
+            person.FirstName = "Louis";
+            person.LastName = "Dejardin";
+            person.SayFullName = new Func<string, string>(x => person.FirstName + person.LastName + x);
+
+            var ff = person.SayFullName()(" Here!");
             //QEReportEntities ff = new QEReportEntities();
             //var faf = ff.StudentRankForModules.Where(i => 1 == 1);
             //var dd=faf.ToList();
@@ -26,6 +42,43 @@ namespace MVCEverything.Controllers
         }
         public ActionResult webpages() {
             return View();
+        }
+
+        public static dynamic Parse(string json)
+        {
+            using (var reader = JsonReaderWriterFactory.CreateJsonReader(Encoding.Unicode.GetBytes(json), XmlDictionaryReaderQuotas.Max))
+            {
+                var f = reader.Value;
+                return ToValue(XElement.Load(reader));
+            }
+        }
+
+        private static dynamic ToValue(XElement element)
+        {
+            var type = (JsonType)Enum.Parse(typeof(JsonType), element.Attribute("type").Value);
+            switch (type)
+            {
+                case JsonType.boolean:
+                    return (bool)element;
+                case JsonType.number:
+                    return (double)element;
+                case JsonType.@string:
+                    return (string)element;
+                case JsonType.@object:
+                case JsonType.array:
+                    //return new DynamicJson(element, type);
+                case JsonType.@null:
+                default:
+                    return null;
+            }
+        }
+        public enum JsonType {
+            boolean,
+            number,
+            @string,
+            @object,
+            array,
+            @null
         }
         // GET: /Student/Details/5
         public ActionResult Details(int? id)
