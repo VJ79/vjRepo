@@ -1,0 +1,1 @@
+D:\vjRepo\vjrepo\VS2008\Test\ConsoleHost\bin\Debug\ConsoleHost.exe.config

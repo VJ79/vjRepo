@@ -1,0 +1,9 @@
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.DesignResources.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Properties.Resources.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\Logging\obj\Debug\Logging.csproj.GenerateResource.Cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb

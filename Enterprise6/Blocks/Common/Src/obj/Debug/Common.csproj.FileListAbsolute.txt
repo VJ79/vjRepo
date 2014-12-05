@@ -1,0 +1,9 @@
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Src\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.Configuration.DesignResources.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.Properties.Resources.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Src\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb

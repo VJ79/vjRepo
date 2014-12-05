@@ -1,0 +1,12 @@
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\App.config
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\MsmqDistributor.exe.config
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\MsmqDistributor.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\MsmqDistributor.exe
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\MsmqDistributor.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Logging.MsmqDistributor.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.MsmqDistributor.DistributorService.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.MsmqDistributor.ProjectInstaller.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.MsmqDistributor.Properties.Resources.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Logging.MsmqDistributor.csproj.GenerateResource.Cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\MsmqDistributor.exe
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\MsmqDistributor\obj\Debug\MsmqDistributor.pdb

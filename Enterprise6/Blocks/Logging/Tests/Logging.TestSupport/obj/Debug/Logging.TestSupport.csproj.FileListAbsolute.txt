@@ -1,0 +1,15 @@
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.TestSupport.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.TestSupport.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Newtonsoft.Json.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\bin\Debug\Newtonsoft.Json.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\obj\Debug\Logging.TestSupport.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.TestSupport.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Tests\Logging.TestSupport\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.TestSupport.pdb

@@ -1,0 +1,8 @@
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\obj\Debug\Common.TestSupport.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Common\Tests\Common.TestSupport\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.pdb

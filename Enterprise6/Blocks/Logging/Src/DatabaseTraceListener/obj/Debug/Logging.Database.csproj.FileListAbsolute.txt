@@ -1,0 +1,8 @@
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Logging.Database.csprojResolveAssemblyReference.cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.Configuration.DesignResources.resources
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Logging.Database.csproj.GenerateResource.Cache
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\vjRepo\vjrepo\Enterprise6\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb

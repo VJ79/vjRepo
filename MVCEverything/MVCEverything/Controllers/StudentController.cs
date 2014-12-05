@@ -24,7 +24,7 @@ namespace MVCEverything.Controllers
         [ActionName("Index")]
         public ActionResult tt()
         {
-            Program.test();
+           // Program.test();
             var str="{a:1,b:'5'}";
             dynamic v = Parse(str);
 
